@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      var prime="";
+      var number=prompt("Enter no upto 100 to check prime no.:");
+      if(number>100)
+      {
+        alert("You can't enter no above 100");
+      }
+      else
+      {
+        for(i=2;i<=number;i++)
+        {
+          flag=0;
+          for(j=2;j<=i/2;j++)
+          {
+            if(i%j==0)
+            {
+              flag=1;
+              break;
+            }
+          }
+          if(flag==0)
+            prime=prime+"\n"+i;
+          }
+          alert("Prime no upto "+number+" are : \n"+prime);
+        }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
